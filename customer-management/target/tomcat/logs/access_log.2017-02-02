@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [02/Feb/2017:17:33:02 +0700] "GET /customer.jsp HTTP/1.1" 200 116 http-bio-8080-exec-1 1247
+0:0:0:0:0:0:0:1 - - [02/Feb/2017:17:33:22 +0700] "GET /customer.jsp HTTP/1.1" 200 116 http-bio-8080-exec-3 18

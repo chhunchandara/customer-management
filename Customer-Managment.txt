@@ -1,0 +1,63 @@
+1. Create table in mysql database
+
+CREATE TABLE td_customer (
+  cus_id int NOT NULL AUTO_INCREMENT,
+  cus_first_name varchar(100) ,
+  cus_last_name varchar(100) ,
+  cus_gender varchar(10) ,
+  cus_email_address varchar(100) ,
+  cus_DOB date ,
+  cus_address varchar(100) ,
+  cus_phoneNumber varchar(100),
+  date_created datetime ,
+  date_updated datetime ,
+  PRIMARY KEY (cus_id)	
+) ;
+
+2. Build maven project
+
+cd C:\JavaProject\assignment\
+mvn archetype:generate -DgroupId=chhunchandara-evening-assignment -DartifactId=customer-management -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+3. Add plugin tomcat7 and jetty to pom.xml
+
+<plugins>
+   <plugin>
+    	<artifactId>maven-compiler-plugin</artifactId>
+    	<version>2.3.2</version>
+   </plugin>
+   <!-- tomcat7 server-->
+   <plugin>
+    	<groupId>org.apache.tomcat.maven</groupId>
+    	<artifactId>tomcat7-maven-plugin</artifactId>
+    	<version>2.2</version>
+    	<configuration>
+			<!--    <tomcatLoggingFile>tomcat_server.log</tomcatLoggingFile>-->
+         	<path>/</path>
+    	</configuration>
+    </plugin>
+    <!-- jetty-->
+   	<plugin>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-maven-plugin</artifactId>
+        <version>9.2.19.v20160908</version>
+        <configuration>
+            <scanIntervalSeconds>3</scanIntervalSeconds>
+              	<webApp>
+                    <contextPath>/</contextPath>
+                </webApp>
+        </configuration>
+	</plugin>
+</plugins>
+
+
+4. Import servlet api
+
+- copy servlet api "servlet-api.jar" to folder "C:\JavaProject\assignment\customer-management\src\main\resources"
+
+- use eclipse to add external library:
+	right click on project name -> Build path -> add external archive -> then browse for servlet api
+	
+5. create login page 
+
+	name index.jsp

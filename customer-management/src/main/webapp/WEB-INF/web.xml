@@ -1,0 +1,63 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+    <servlet-name>LOGIN</servlet-name>
+    <servlet-class>servlet.CLS_LOGIN</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LOGIN</servlet-name>
+    <url-pattern>/LOGIN</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CLS_CUSTOMER</servlet-name>
+    <servlet-class>servlet.CLS_CUSTOMER</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CLS_CUSTOMER</servlet-name>
+    <url-pattern>/CLS_CUSTOMER</url-pattern>
+  </servlet-mapping>
+  
+ 
+   <servlet>
+    <servlet-name>CLS_LOGOUT</servlet-name>
+    <servlet-class>servlet.CLS_LOGOUT</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CLS_LOGOUT</servlet-name>
+    <url-pattern>/CLS_LOGOUT</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>UPDATE</servlet-name>
+    <servlet-class>servlet.UPDATE</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UPDATE</servlet-name>
+    <url-pattern>/UPDATE</url-pattern>
+  </servlet-mapping>
+ 
+     <servlet>
+    <servlet-name>DELETE</servlet-name>
+    <servlet-class>servlet.DELETE</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DELETE</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+ 
+      <servlet>
+    <servlet-name>ADD</servlet-name>
+    <servlet-class>servlet.ADD</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ADD</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>
